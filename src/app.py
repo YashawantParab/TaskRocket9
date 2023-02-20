@@ -3,7 +3,9 @@ import sys
 from youtube_transcript_api import YouTubeTranscriptApi
 import json 
 
-openai.api_key = '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'
+key = os.environ.get('API_KEY')
+openai.api_key = key
+
 
 diagnostics = 0
 include_mentions = 0
